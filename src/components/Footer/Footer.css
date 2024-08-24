@@ -1,0 +1,159 @@
+.section__padding{
+    padding: 4rem 4rem;
+}
+
+.footer{
+    background-color: #096b90;
+    position: relative;
+    overflow: hidden;
+}
+
+.sb__footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1; 
+    background: transparent;
+}
+
+.sc__footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socialmedia img{
+    margin-top: 0.9rem;
+    width: 60%;
+}
+
+.social-icon:hover {
+    filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(200deg) brightness(90%) contrast(90%);
+}
+
+.sb_footer-below{
+    display: flex;    
+    flex-direction: row;    
+    justify-content: space-between;    
+    margin-top: 0.2rem;    
+}
+    
+.sb_footer-below-Links{    
+    display: flex;    
+    flex-direction: row;    
+}
+    
+.sb_footer-below-Links p{    
+    font-size: 13px;    
+    line-height: 15px;    
+    margin-left: 2rem;    
+    color: white;    
+    font-weight:600;    
+}
+
+.sb__footer-copyright p{
+    font-size: 19px;
+    line-height: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+  
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../assets/wave.png);
+    background-size: 1000px 100px; 
+}
+
+.wave1 {
+    animation: wave-animation 20s linear infinite;
+    z-index: 1000;
+    opacity: 0.2;
+    animation-delay: 0s;
+    bottom:-10px;
+}
+ 
+.wave2 {
+    animation: wave-animation2 15s linear infinite;
+    z-index: 998;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom:10px;
+}
+  
+.wave3 {
+    animation: wave-animation3 10s linear infinite;
+    z-index: 996;
+    opacity: 0.7;
+    animation-delay: 0s;
+    bottom:10px;
+}
+
+.wave4 {
+    animation: wave-animation4 5s linear infinite;
+    z-index: 994;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom:10px;
+}
+
+@keyframes wave-animation {
+    0% {
+      background-position-x: 0px;
+    }
+    100% {
+      background-position-x: 1000px;
+    }
+}
+
+@keyframes wave-animation2 {
+    0% {
+      background-position-x: 0px;
+    }
+    100% {
+      background-position-x: -1000px;
+    }
+}
+
+@keyframes wave-animation3 {
+    0% {
+      background-position-x: 0px;
+    }
+    100% {
+      background-position-x: 500px;
+    }
+}
+
+@keyframes wave-animation4 {
+    0% {
+      background-position-x: 0px;
+    }
+    100% {
+      background-position-x: -500px;
+    }
+}
+
+@media screen and (max-width: 550px){        
+    .sb__footer-copyright p{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,44 @@
+.education-section {
+text-align: center;
+margin-bottom: 50px;
+font-size: 17px;
+padding: 5%;
+}
+
+.education-title {
+font-size: 2.5rem;
+margin-bottom: 10px;
+color: #05344a;
+}
+
+.education-line {
+width: 80px;
+height: 4px;
+background-color: #08171e;
+margin: 0 auto 50px auto;
+border: none;
+}
+
+.timeline {
+position: relative;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.vertical-timeline-element--education {
+background: #fff;
+color: #000;
+}
+
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle {
+margin-bottom: 10px;
+}
+
+.timeline-icon {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 50%;
+border: 2px solid #003e5a;
+}
